@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Inconsolata:wght@700&family=Lato:ital,wght@1,900&family=PT+Serif:wght@700&family=Poppins:wght@600&family=Roboto+Mono:wght@500&family=Space+Mono:wght@400;700&family=Ubuntu&display=swap');
+/*font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.head-container h1{
+    font-family: 'PT Serif', serif;
+}
+
+.head-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.who-are{
+    width: 40%;
+}
+
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 4rem 10rem;
+}
+
+.img-container .member{
+max-width: 300px;
+margin: auto;
+margin-bottom: 4rem;
+cursor: pointer;
+position: relative;
+
+}
+
+.member img{
+    width: 100%;
+}
+
+.member:nth-child(3n + 2){
+    margin-bottom: 0;
+    margin-top: 5rem;
+}
+
+.member:first-child:after{
+    content: 'Product owner';
+    padding-bottom: 1rem;
+    right: -5rem;
+}
+
+.member:nth-child(2)::after{
+    content: 'Art director';
+}
+
+.member:nth-child(3)::after{
+    content: 'Tech lead';
+}
+
+.member:nth-child(4)::after{
+    content: 'UX designer';
+}
+
+.member:nth-child(5)::after, .member:nth-child(6)::after{
+    content: 'Developer';
+}
+
+
+.member::after{
+    color: black;
+    position: absolute;
+    right: -4rem;
+    top: 3rem;
+    transform: rotate(-90deg);
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 768px){
+    
+    .head-container{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .who-are{
+        width: 90%;
+    }
+
+    .img-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        width: 85%;
+        padding: 4rem 0rem;
+        margin: auto;
+        margin-right: 2rem;
+    }
+
+    .member:nth-child(2n + 2){
+        margin-bottom: 0;
+        margin-top: 5rem;
+    }
+
+}
