@@ -49,8 +49,8 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [HTML5]([https://reactjs.org/](https://www.w3schools.com/html/default.asp))
-- [CSS3]([https://vuejs.org/](https://www.w3schools.com/css/))
+- [HTML5](https://www.w3schools.com/html/default.asp)
+- [CSS3](https://www.w3schools.com/css/)
 
 
 ## Features
